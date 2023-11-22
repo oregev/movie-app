@@ -3,7 +3,7 @@ import { PageLayout } from '../layout';
 import { Favorites, Movie, NotFound } from '../pages';
 
 export const AppRouter = (): JSX.Element => (
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Routes>
       <Route path="/" element={<PageLayout />}>
         <Route path="/" element={<Navigate to="/movie" replace={true} />} />
