@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MovieContainer = styled.div`
-  min-width: 400px;
+  min-width: 300px;
 
   display: flex;
   flex-direction: column;

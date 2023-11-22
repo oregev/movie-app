@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const AppHeaderContainer = styled.div`
   height: 75px;
+  padding: 0 10px;
   background: #333;
 
   display: flex;
@@ -12,7 +13,6 @@ export const AppHeaderContainer = styled.div`
 
 export const AppHeaderSection = styled.div`
   width: 100%;
-  padding: 10px;
 `;
 
 export const LinksSection = styled(AppHeaderSection)`
@@ -23,8 +23,8 @@ export const LinksSection = styled(AppHeaderSection)`
 export const AppHeaderTitle = styled.h2``;
 
 export const NavigationLink = styled(Link)`
-  min-width: 100px;
-  padding: 2px 10px;
+  width: 75px;
+  padding: 2px 5px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background: #666;
