@@ -6,7 +6,7 @@ export const AppRouter = (): JSX.Element => (
   <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Routes>
       <Route path="/" element={<PageLayout />}>
-        <Route path="/" element={<Navigate to="/movie" replace={true} />} />
+        <Route index element={<Navigate to="/movie" replace={true} />} />
         <Route path="movie" element={<Movie />} />
         <Route path="favorites" element={<Favorites />} />
       </Route>
