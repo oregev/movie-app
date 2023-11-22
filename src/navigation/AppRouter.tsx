@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { PageLayout } from '../layout';
 import { Favorites, Movie, NotFound } from '../pages';
 
 export const AppRouter = (): JSX.Element => (
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<PageLayout />}>
         <Route path="/" element={<Navigate to="/movie" replace={true} />} />
@@ -12,5 +12,5 @@ export const AppRouter = (): JSX.Element => (
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
